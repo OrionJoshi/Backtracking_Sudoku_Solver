@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(218, 196, 218);
+}
+
+/* global classes */
+
+.button {
+  margin-right: 10px;
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+  min-width: 100px;
+  cursor: pointer;
+  background-color: rgb(36, 33, 33);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar {
+  font-size: 40px;
+  font-family: sans-serif;
+  background-color: rgb(14, 104, 107);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* button */
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* buttton hover effect */
+#generate-sudoku:hover,
+#solve:hover {
+  background-color: white;
+  color: black;
+}
+
+/* drop down */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 6px;
+}
+/* dropdown content hover effect */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* block container */
+
+#container {
+  height: auto;
+  width: 540px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  margin: 0 auto;
+}
+
+#container div {
+  background-color: whitesmoke;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 30px;
+  color: green;
+}
+
+/* styling border of block */
+
+.lsb {
+  border-left: black 4px solid;
+}
+
+.bsb {
+  border-bottom: black 4px solid;
+}
+
+.rsb {
+  border-right: black 4px solid;
+}
+
+.tsb {
+  border-top: black 4px solid;
+}
+
+.ldb {
+  border-left: black 0.6px solid;
+}
+
+.bdb {
+  border-bottom: black 0.6px solid;
+}
+
+.rdb {
+  border-right: black 0.6px solid;
+}
+
+.tdb {
+  border-top: black 0.6px solid;
+}
